@@ -2,12 +2,28 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
+const PostItem = props => {
+  const { title, link, pubDate } = props.post
+  return (
+    <li>
+      <a href={link}>
+        {title}
+        <small>[{pubDate}]</small>
+      </a>
+    </li>
+  )
+}
+
 const IndexPage = props => {
   return (
     <div>
       <p> Hello Gatsby </p>
       <Link to="/about">Link to About</Link>
-      <pre>{JSON.stringify(props.data, null, 2)}</pre>
+      <ul>
+        {props.data.allFeedQiita.nodes.map(post => {
+          return <PostItem post={post} key={post.link} />
+        })}
+      </ul>
     </div>
   )
 }
