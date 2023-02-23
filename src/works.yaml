@@ -1,0 +1,26 @@
+- slug: writing
+  title: hogehoge
+  imageUrl: '/work.png'
+  roles: 
+   - WordPress
+   - React
+  description: |-
+    fugafuga
+- slug: writing
+  title: piyopiyo
+  imageUrl: '/work.png'
+  roles: 
+   - React
+   - Gatsby
+   - Figma
+  description: |-
+    pipipiyo
+- slug: bluebird
+  title: あああああ
+  imageUrl: '/work.png'
+  roles: 
+   - WordPress
+   - Next.js
+  description: |-
+    あああああ
+
