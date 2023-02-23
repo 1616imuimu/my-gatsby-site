@@ -15,6 +15,13 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://qiita.com/mottox2/feed`,
+        name: `Qiita`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
